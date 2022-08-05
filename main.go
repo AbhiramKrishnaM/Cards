@@ -3,9 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var card string = newCard()
+	cards := []string{newCard(), newCard(), newCard()}
 
-	fmt.Println(card)
+	cards = append(cards, "Six of spades")
+
+	for i, card := range cards {
+		fmt.Println(card, i)
+	}
+
+	fmt.Println(cards)
+
 }
 
 func newCard() string {
