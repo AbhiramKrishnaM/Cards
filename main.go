@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	cards := newdeck()
 
-	fmt.Println(cards.convertToString())
+	fmt.Println(cards.saveToFile("new"))
 
 	// cards.print()
 	// fmt.Println(cards)
