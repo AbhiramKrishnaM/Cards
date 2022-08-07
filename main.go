@@ -5,12 +5,18 @@ import "fmt"
 func main() {
 	cards := newdeck()
 
+	fmt.Println(cards.convertToString())
+
 	// cards.print()
 	// fmt.Println(cards)
 
-	fmt.Println("Play hand")
+	// fmt.Println("Play hand")
 
-	hand, remainingDeck := deal(cards, 2)
-	fmt.Println(hand, " balance ", remainingDeck)
+	// hand, remainingDeck := deal(cards, 2)
+	// fmt.Println(hand, " balance ", remainingDeck)
+
+	// greeting := []byte("Hello World")
+
+	// fmt.Println(greeting)
 
 }
